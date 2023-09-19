@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Shafikov Task-2</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Транспортное средства и водители</h2>
+        <form id="vehicle-form">
+            <label for="license-plate">Гос-номер</label>
+            <input type="text" id="license-plate" name="license-plate"  placeholder="Укажите гос-номер" required>
+
+            <label for="vehicle-description">Транспортное средство</label>
+            <input type="text" id="vehicle-description" name="vehicle-description" placeholder="Транспортное средство" required>
+
+            <label for="date">Ориентировочная дата прибытия к покупателю</label>
+            <input type="text" id="date" name="date" placeholder="Дата*" required>
+
+            <h3>Данные о водителе</h3>
+
+            <label for="full-name">ФИО</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Укажите ФИО водителя" required>
+
+            <div class="passport">
+                <label class="passport-series-title" for="passport-series">Паспортные данные</label>
+                <div class="passport-wrap">
+                    <input type="text" id="passport-series" name="passport-series" placeholder="Серия" required>
+                    <input type="text" id="passport-number" name="passport-number" placeholder="Номер" required>
+                </div>
+            </div>
+
+            <label for="issued-by">Кем выдан</label>
+            <input type="text" id="issued-by" name="issued-by" placeholder="Кем выдан" required>
+
+            <label for="issued-date">Когда выдан</label>
+            <input type="text" id="issued-date" name="issued-date" placeholder="Когда выдан" required>
+
+            <div class="btns-wrapper">
+                <button class="btn" type="submit" id="submit-button">Отправить</button>
+                <button class="btn btn-cancel" type="button" id="cancel-button">Отмена</button>
+            </div>
+        </form>
+    </div>
+    <div id="modal-submit" class="modal-submit">
+          <p>Форма отправлена!</p>
+      </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
